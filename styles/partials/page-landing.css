@@ -1,5 +1,5 @@
 #page-landing {
-    background-color: var(--color-primary);
+    background: var(--color-primary);
 }
 
 #page-landing #container {
@@ -7,11 +7,11 @@
 }
 
 .logo-container img {
-    height: 100%;
+    height: 10rem;
 }
 
 .logo-container {
-    text-align: inital;
+    text-align: center;
     margin-bottom: 3.2rem;
 }
 
@@ -23,23 +23,23 @@
 }
 
 .hero-image {
-    grid-area: image;
+    width: 100%;
 }
 
 .buttons-container {
-    grid-area: button;
-    justify-content: flex-start;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
 }
 
 .buttons-container a {
     width: 30rem;
     height: 10.4rem;
 
-    border-radius: .8rem;
+    border-radius: 0.8rem;    /* Arredondamento das bordas */
     margin-right: 1.6rem;
 
-    font: 700 2.4rem Archivo;
+    font: bold 2.4rem Archivo;
 
     display: flex;
     align-items: center;
@@ -51,6 +51,8 @@
 
     color: var(--color-button-text);
 }
+
+
 
 .buttons-container a img {
     width: 4rem;
@@ -75,7 +77,7 @@
 }
 
 .total-connections {
-    font-size: 1.8rem;
+    font-size:  1.8rem;
 
     display: flex;
     align-items: center;
@@ -86,9 +88,10 @@
     margin-left: 0.8rem;
 }
 
+
 @media (max-width: 699px) {
     :root {
-        font-size: 40%; /* modificar as medidas rem */
+        font-size: 40%;     /* Modificar as medidas rem */
     }
 }
 
@@ -103,6 +106,7 @@
         "button button texting";
         column-gap: 87px;
         row-gap: 86px;
+        
     }
 
     .logo-container {
@@ -124,6 +128,7 @@
     .buttons-container {
         grid-area: button;
         justify-content: flex-start;
+        margin: 0;
     }
 
     .total-connections {

@@ -1,12 +1,11 @@
+
 .select-block label,
-.input-block label,
-.textarea-block label {
+.input-block label {
     font-size: 1.4rem;
     color: var(--color-text-complement);
 }
 
-
-.input-block input,
+.input-block input, 
 .select-block select,
 .textarea-block textarea {
     width: 100%;
@@ -34,12 +33,13 @@
 
 .input-block:focus-within::after,
 .textarea-block:focus-within::after {
-    content: "";
+    content:"";
 
     width: calc(100% - 3.2rem);
     height: 2px;
     background: var(--color-primary-light);
+
     position: absolute;
     left: 1.6rem;
-    bottom: 0;
+    bottom: 0px;
 }
