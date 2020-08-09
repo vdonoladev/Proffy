@@ -1,6 +1,7 @@
 
 .select-block label,
-.input-block label {
+.input-block label,
+.textarea-block label {
     font-size: 1.4rem;
     color: var(--color-text-complement);
 }
@@ -45,7 +46,7 @@
 }
 
 label small {
-    font-size:  1.2rem;
-    padding-left:  1.2rem;
-    color:  var(--color-small-info);
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    color: var(--color-small-info);
 }
