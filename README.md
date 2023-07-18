@@ -1,6 +1,7 @@
 
 
 
+
 <h1 align="center" style="font-weight: bold;">Proffy</h1>
 
 <p align="center">
@@ -30,9 +31,10 @@
 
 <h2 id="tech">💻 Tecnologias</h2>
 
-- [HTML](https://devdocs.io/html)
-- [CSS](https://devdocs.io/css)
-- [Tailwind CSS](https://devdocs.io/tailwindcss)
+- [TypeScript](https://devdocs.io/typescript)
+- [React](https://devdocs.io/react)
+- [Expo](https://expo.io/)
+- [Express](https://devdocs.io/express)
 
 <h2 id="about">Sobre</h2>
 
