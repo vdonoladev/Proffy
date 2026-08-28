@@ -5,11 +5,12 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-dependabot/npm_and_yarn/sqlite-async-1.1.1
     "nunjucks": "^3.2.2",
-    "sqlite-async": "^1.1.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.5"
   }
 }
+

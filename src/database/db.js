@@ -1,8 +1,9 @@
-const Database = require('sqlite-async')
+const { open } = require('sqlite')
+const sqlite3 = require('sqlite3')
 
-function execute(db) {
+async function execute(db) {
     // Criando as tabelas do banco de dados.
-    return db.exec(`
+    await db.exec(`
         CREATE TABLE IF NOT EXISTS proffys (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT,
@@ -26,6 +27,11 @@ function execute(db) {
             time_to INTEGER
         );
     `)
+
+    return db // <- Retorna a conexão do banco para os outros arquivos poderem usar
 }
 
-module.exports = Database.open(__dirname + '/database.sqlite').then(execute)
+module.exports = open({
+    filename: __dirname + '/database.sqlite',
+    driver: sqlite3.Database
+}).then(execute)
