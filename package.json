@@ -4,7 +4,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.22.2",
     "nunjucks": "^3.2.2",
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1"
